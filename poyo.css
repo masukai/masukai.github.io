@@ -30,3 +30,28 @@ div.test {
 a {
     color:#ED784A;
 }
+
+ul.index {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #434343;
+}
+li.index {
+	float: left;
+	border-right: 1.5px solid #FCFAF2;
+}
+li.index:last-child {
+	border-right: none;
+}
+li.index a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li.index a:hover {
+	background-color: #ED784A;
+}
