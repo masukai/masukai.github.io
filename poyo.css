@@ -30,6 +30,10 @@ div.test {
 a {
     color:#ED784A;
 }
+img {
+    margin: 15px;
+}
+
 
 ul.index {
 	list-style-type: none;
