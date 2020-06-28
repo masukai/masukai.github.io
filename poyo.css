@@ -30,8 +30,8 @@ div.test {
 a {
     color:#ED784A;
 }
-img {
-    margin: 15px;
+img.test {
+    margin: 0px 200px;
 }
 
 
