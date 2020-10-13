@@ -125,7 +125,7 @@
         <img class="test" src="photo/glico.png" alt="" height="200">
     </p>
     <p>
-        以下、5秒に1回、24枚の写真から6枚選ばれて切り替わります。
+        以下、10秒に1回、24枚の写真から6枚選ばれて切り替わります。
     </p>
     <p>
     <div id="container">
@@ -165,7 +165,7 @@
         document.getElementById("area5").src = png5;
         var png6 = "random_photo/"+randoms[5]+".png";
         document.getElementById("area6").src = png6;
-        setTimeout("select_png()",5000);
+        setTimeout("select_png()",10000);
     }
     </script>
     </p>
