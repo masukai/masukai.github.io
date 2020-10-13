@@ -33,6 +33,18 @@ a {
 img.test {
     margin: 0px 20px;
 }
+#container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-flow: dense;
+}
+#itemB {
+    grid-row: span 2; grid-column: span 2;
+}
+#itemC {
+    grid-row: span 2; grid-column: span 2;
+}
 
 
 ul.index {

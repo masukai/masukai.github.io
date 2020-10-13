@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="poyo.css">
     <link rel="shortcut icon" href="photo/cake.png">
 </head>
-<body>
+<body onLoad="select_png()">
     <h3><a href="./poyo_e.html">English</a> | <a href="./poyo.html">Japanese</a></h3>
     <hr>
     <h1>Kaito Masuda's Profile</h1>
@@ -18,10 +18,56 @@
     <h2>News</h2>
     <p>
         <ul style="list-style-type: square">
+        <li>2020.10.13: "Achievements" and "Photos" are update.</li>
         <li>2020.09.14: "Achievements" is update.</li>
         <li>2020.06.26: This website is now open!</li>
         <li>2020.01.27: I opened this website, and I'm ready.</li>
         </ul>
+    </p>
+    </div>
+    <div id="Photos">
+    <h2>Photos</h2>
+    <p>
+    <div id="container">
+        <div id="itemA"><img src="random_photo/1.png" height="200" id="area1"></div>
+        <div id="itemB"><img src="random_photo/2.png" height="400" id="area2"></div>
+        <div id="itemC"><img src="random_photo/3.png" height="400" id="area3"></div>
+        <div id="itemD"><img src="random_photo/4.png" height="200" id="area4"></div>
+        <div id="itemE"><img src="random_photo/5.png" height="200" id="area5"></div>
+        <div id="itemF"><img src="random_photo/6.png" height="200" id="area6"></div>
+    </div>
+    <script>
+    function select_png(){
+        var randoms = [];
+        var min = 1, max = 24;
+        for(i = min; i <= max; i++){
+            while(true){
+                var tmp = intRandom(min, max);
+                if(!randoms.includes(tmp)){
+                    randoms.push(tmp);
+                    break;
+                }
+            }
+        }
+        function intRandom(min, max){
+            return Math.floor( Math.random() * (max - min + 1)) + min;
+        }
+        console.log(randoms)
+        var png1 = "random_photo/"+randoms[0]+".png";
+        document.getElementById("area1").src = png1;
+        var png2 = "random_photo/"+randoms[1]+".png";
+        document.getElementById("area2").src = png2;
+        var png3 = "random_photo/"+randoms[2]+".png";
+        document.getElementById("area3").src = png3;
+        var png4 = "random_photo/"+randoms[3]+".png";
+        document.getElementById("area4").src = png4;
+        var png5 = "random_photo/"+randoms[4]+".png";
+        document.getElementById("area5").src = png5;
+        var png6 = "random_photo/"+randoms[5]+".png";
+        document.getElementById("area6").src = png6;
+        setTimeout("select_png()",5000);
+    }
+    </script>
     </p>
     </div>
     <hr>
