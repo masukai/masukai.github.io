@@ -15,8 +15,29 @@
     </script>
 </head>
 <body onLoad="select_png()">
-    <h3>English | <a href="./poyo.html">Japanese</a></h3>
-
+    <h3><div align="right"><span id="view_clock"></span></div>
+        English | <a href="./poyo.html">Japanese</a></h3>
+        <script type="text/javascript">
+        timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
+        function clock() {
+            document.getElementById("view_clock").innerHTML = getNow();
+        }
+        function getNow() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var mon = ('00' + (now.getMonth()+1)).slice(-2); //１を足すこと
+            var day = ('00' + now.getDate()).slice(-2);
+            var you = now.getDay();
+            var hour = ('00' + now.getHours()).slice(-2);
+            var min = ('00' + now.getMinutes()).slice(-2);
+            var sec = ('00' + now.getSeconds()).slice(-2);
+            //曜日の選択肢
+            var youbi = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+            //出力用
+            var s = year + "/" + mon + "/" + day + " " + youbi[you] + " " + hour + ":" + min + ":" + sec;
+            return s;
+        }
+        </script>
     <ul class="index" id="nav">
         <li class="index"><a href="#Self-Introduction">Self-Introduction</a></li>
         <li class="index"><a href="#News">News</a></li>
@@ -57,6 +78,7 @@
     <h2>News</h2>
     <p>
         <ul style="list-style-type: square">
+        <li>2020.10.27: Added the ability to display the date and time.</li>
         <li>2020.10.22: "Self-Introduction" and "Areas of Interest" are update.</li>
         <li>2020.10.13: "Achievements" and "Photos" are update.</li>
         <li>2020.09.14: "Achievements" is update.</li>
