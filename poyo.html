@@ -162,7 +162,7 @@
         <img class="test" src="photo/kansai.jpg" alt="" height="200">
     </p>
     <p>
-        以下、10秒に1回、24枚の写真から6枚選ばれて切り替わります。
+        以下、10秒に1回、32枚の写真から6枚選ばれて切り替わります。
     </p>
     <p>
     <div id="container">
@@ -176,7 +176,7 @@
     <script>
     function select_png(){
         var randoms = [];
-        var min = 1, max = 24;
+        var min = 1, max = 32;
         for(i = min; i <= max; i++){
             while(true){
                 var tmp = intRandom(min, max);
