@@ -1,7 +1,7 @@
 body {
     color:#373C38;
     line-height:1.7;
-    background-color:#F1F7FC;
+    background-color:#E8E8E8;
     margin-left:20px;
     margin-right:20px;
     font-family:"arial";
@@ -16,14 +16,14 @@ h3 {
     color:#B5495B;
 }
 h3.bar {
-    color:#F1F7FC;
+    color:#E8E8E8;
     line-height:1.7;
     background-color:#373C38;
     padding-left:20px;
     padding-right:20px;
 }
 div.test {
-    color:#F1F7FC;
+    color:#E8E8E8;
     line-height:1.7;
     background-color:#373C38;
     padding-left:20px;
@@ -59,14 +59,14 @@ ul.index {
 }
 li.index {
 	float: left;
-	border-right: 1.5px solid #F1F7FC;
+	border-right: 1.5px solid #E8E8E8;
 }
 li.index:last-child {
 	border-right: none;
 }
 li.index a {
 	display: block;
-	color: #F1F7FC;
+	color: #E8E8E8;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
