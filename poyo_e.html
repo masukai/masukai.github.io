@@ -15,49 +15,28 @@
     </script>
 </head>
 <body onLoad="select_png()">
-    <h3><div align="right"><span id="view_clock"></span></div>
+    <h3 class="bar"><div align="right"><span id="view_clock"></span></div>
         English | <a href="./poyo.html">Japanese</a></h3>
-        <script type="text/javascript">
-        timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
-        function clock() {
-            document.getElementById("view_clock").innerHTML = getNow();
-        }
-        function getNow() {
-            var now = new Date();
-            var year = now.getFullYear();
-            var mon = ('00' + (now.getMonth()+1)).slice(-2); //１を足すこと
-            var day = ('00' + now.getDate()).slice(-2);
-            var you = now.getDay();
-            var hour = ('00' + now.getHours()).slice(-2);
-            var min = ('00' + now.getMinutes()).slice(-2);
-            var sec = ('00' + now.getSeconds()).slice(-2);
-            //曜日の選択肢
-            var youbi = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
-            //出力用
-            var s = year + "/" + mon + "/" + day + " " + youbi[you] + " " + hour + ":" + min + ":" + sec;
-            return s;
-        }
-        </script>
+        <script type="text/javascript" src="date.js"></script>
     <ul class="index" id="nav">
         <li class="index"><a href="#Self-Introduction">Self-Introduction</a></li>
         <li class="index"><a href="#News">News</a></li>
+        <li class="index"><a href="#Photos">Photos</a></li>
         <li class="index"><a href="#Achievements">Achievements</a></li>
         <li class="index"><a href="#Productions">Productions</a></li>
         <li class="index"><a href="#Activities">Activities</a></li>
-        <li class="index"><a href="#Interest">Areas of Interest</a></li>
         <li class="index"><a href="#Personal_History">Personal History</a></li>
         <li class="index"><a href="#SNS">SNS & GitHub</a></li>
-        <li class="index"><a href="#Photos">Photos</a></li>
         <li class="index"><a href="#Contact">Contact</a></li>
     </ul>
 
     <hr>
-    <h1>Kaito Masuda's Profile</h1>
+    <h1>My Profile</h1>
 
     <div id="Self-Introduction">
     <h2>Self-Introduction</h2>
     <p>
-        Kaito Masuda<br>
+        <b>Name</b>: Kaito Masuda<br>
         <b>Grade</b>: 1st year master student<br>
         <b>Affiliation</b>:
         <a href="http://energy.kais.kyoto-u.ac.jp/lase/index.php/eng" target="_blank">Lab. of Agricultural Systems Engineering.</a> |
@@ -69,7 +48,11 @@
         <b>Research Description</b> :
         Cost savings through LED irradiation methods and leaf lettuce response in Plant Factories with Artificial Lighting (PFALs).<br>
         <b>ORCID</b>: <a href="https://orcid.org/0000-0002-0831-3744" target="_blank">Here.</a><br>
-        <b>Hobbies</b>: Cooking / Traveling / Driving / Cycling / 3DCAD / Video editing
+        <b>Hobbies</b>: Cooking / Traveling / Driving / Cycling<br>
+        <b>Interests</b>: <br>
+        I'm interested in being a data scientist and IT planning and strategist.<br>
+        I can handle Python / R / SQL / (Excel) / HTML / CSS.<br>
+        C / C++ / Fortran / Javascript can be handled while investigating.
     </div>
     </p>
     </div>
@@ -87,6 +70,28 @@
         <li>2020.01.27: I opened this website, and I'm ready.</li>
         </ul>
     </p>
+    </div>
+
+    <div id="Photos">
+        <h2>Photos</h2>
+        <!--p>
+            <img class="test" src="photo/glico.png" alt="" height="200">
+            <img class="test" src="photo/kansai.jpg" alt="" height="200">
+        </p-->
+        <p>
+            Below, 6 photos will be selected and switched out of 32 photos once every 10 seconds.
+        </p>
+        <p>
+        <div id="container">
+            <div id="itemA"><img src="random_photo/1.png" height="200" id="area1"></div>
+            <div id="itemB"><img src="random_photo/2.png" height="400" id="area2"></div>
+            <div id="itemC"><img src="random_photo/3.png" height="400" id="area3"></div>
+            <div id="itemD"><img src="random_photo/4.png" height="200" id="area4"></div>
+            <div id="itemE"><img src="random_photo/5.png" height="200" id="area5"></div>
+            <div id="itemF"><img src="random_photo/6.png" height="200" id="area6"></div>
+        </div>
+        <script type="text/javascript" src="photo.js"></script>
+        </p>
     </div>
 
     <div id="Achievements">
@@ -115,14 +120,14 @@
 
     <div id="Activities">
     <h2>Activities</h2>
-    <h4>Clubs</h4>
+    <h3>Clubs</h3>
         <p>
         2016.04-2018.07: <a href="http://shootingstars.hannnari.com/" target="_blank">Kyoto University birdman team ShootingStars</a> | Fairing Group Leader and Designer<br>
         I have experience working with Fusion360 in 3DCAD.<br>
         2020.09-now: Deep Learning and Machine Learning Study Group | Planning<br>
         I have a weekly deep learning study group using TensorFlow and keras in Python3. We are creating a trash AI.
         </p>
-    <h4>Part-time Works</h4>
+    <h3>Part-time Works</h3>
         <p>
         2016.05-now: <a href="https://www.try-plus.com/schools/342" target="_blank">Try-Plus Takaragaike Station School</a> | Cram School Teacher<br>
         I have taught a wide range of students from elementary to high school.<br>
@@ -133,23 +138,11 @@
         2019.12: Robotic Classroom | Administrative Support<br>
         I was in charge of general robotics with Arduino and 3D printer for elementary school students.
         </p>
-    <h4>Volunteers</h4>
+    <h3>Volunteers</h3>
         <p>
         2020.12-now: <a href="https://homerspaceflightproject.studio.site/" target="_blank">Homer Spaceflight Project (HoSP)</a> | TBA<br>
         I plan to participate in web advertising.
         </p>
-    </div>
-
-    <div id="Interest">
-    <h2>Areas of Interest</h2>
-    <p>
-        <img src="photo/poyo.png" alt="" height="200">
-    </p>
-    <p>
-        I'm also interested in being a data scientist and IT planning and strategist.<br>
-        I can handle Python / R / SQL / (Excel) / HTML / CSS.<br>
-        C / C++ / Fortran / Javascript can be handled while investigating.
-    </p>
     </div>
 
     <div id="Personal_History">
@@ -169,59 +162,6 @@
         <a href="https://www.instagram.com/poyo010_/" target="_blank"><img class="test" src="photo/insta.png" alt="" height="60"></a>
         <a href="https://www.facebook.com/kaito.masuda.581" target="_blank"><img class="test" src="photo/Facebook.png" alt="" height="60"></a>
         <a href="https://github.com/masukai" target="_blank"><img class="test" src="photo/Github.png" alt="" height="60"></a>
-    </p>
-    </div>
-
-    <div id="Photos">
-    <h2>Photos</h2>
-    <p>
-        <img class="test" src="photo/glico.png" alt="" height="200">
-        <img class="test" src="photo/kansai.jpg" alt="" height="200">
-    </p>
-    <p>
-        Below, 6 photos will be selected and switched out of 32 photos once every 10 seconds.
-    </p>
-    <p>
-    <div id="container">
-        <div id="itemA"><img src="random_photo/1.png" height="200" id="area1"></div>
-        <div id="itemB"><img src="random_photo/2.png" height="400" id="area2"></div>
-        <div id="itemC"><img src="random_photo/3.png" height="400" id="area3"></div>
-        <div id="itemD"><img src="random_photo/4.png" height="200" id="area4"></div>
-        <div id="itemE"><img src="random_photo/5.png" height="200" id="area5"></div>
-        <div id="itemF"><img src="random_photo/6.png" height="200" id="area6"></div>
-    </div>
-    <script>
-    function select_png(){
-        var randoms = [];
-        var min = 1, max = 32;
-        for(i = min; i <= max; i++){
-            while(true){
-                var tmp = intRandom(min, max);
-                if(!randoms.includes(tmp)){
-                    randoms.push(tmp);
-                    break;
-                }
-            }
-        }
-        function intRandom(min, max){
-            return Math.floor( Math.random() * (max - min + 1)) + min;
-        }
-        console.log(randoms)
-        var png1 = "random_photo/"+randoms[0]+".png";
-        document.getElementById("area1").src = png1;
-        var png2 = "random_photo/"+randoms[1]+".png";
-        document.getElementById("area2").src = png2;
-        var png3 = "random_photo/"+randoms[2]+".png";
-        document.getElementById("area3").src = png3;
-        var png4 = "random_photo/"+randoms[3]+".png";
-        document.getElementById("area4").src = png4;
-        var png5 = "random_photo/"+randoms[4]+".png";
-        document.getElementById("area5").src = png5;
-        var png6 = "random_photo/"+randoms[5]+".png";
-        document.getElementById("area6").src = png6;
-        setTimeout("select_png()",10000);
-    }
-    </script>
     </p>
     </div>
 
