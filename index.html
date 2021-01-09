@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
@@ -9,14 +10,22 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181035238-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-181035238-1');
     </script>
 </head>
+
 <body onLoad="select_png()">
-    <h3 class="bar"><div align="right"><span id="view_clock"></span></div>
-    <a href="./poyo_e.html">English</a> | <a href="./poyo.html">Japanese</a></h3>
+    <div class="cursor"></div>
+    <div class="follower"></div>
+    <h3 class="bar">
+        <div align="right"><span id="view_clock"></span></div>
+        <a href="./poyo_e.html">English</a> | <a href="./poyo.html">Japanese</a>
+    </h3>
     <script type="text/javascript" src="date.js"></script>
     <ul class="index" id="nav">
         <li class="index"><a href="#News"><b>News</b></a></li>
@@ -28,37 +37,38 @@
     </p>
     <hr>
     <div id="News">
-    <h2>News</h2>
-    <p>
-        <ul style="list-style-type: square">
-        <li><b>2020.12.25</b>: I have made major changes to the contents of this website.</li>
-        <li><b>2020.12.01</b>: I split "Activities" into "Clubs", "Part-time Works", and "Volunteers".</li>
-        <li><b>2020.10.27</b>: Added the ability to display the date and time.</li>
-        <li><b>2020.10.22</b>: "Self-Introduction" and "Areas of Interest" are update.</li>
-        <li><b>2020.10.13</b>: "Achievements" and "Photos" are update.</li>
-        <li><b>2020.09.14</b>: "Achievements" is update.</li>
-        <li><b>2020.06.26</b>: This website is now open!</li>
-        <li><b>2020.01.27</b>: I opened this website, and I'm ready.</li>
-        </ul>
-    </p>
+        <h2>News</h2>
+        <p>
+            <ul style="list-style-type: square">
+                <li><b>2020.12.25</b>: I have made major changes to the contents of this website.</li>
+                <li><b>2020.12.01</b>: I split "Activities" into "Clubs", "Part-time Works", and "Volunteers".</li>
+                <li><b>2020.10.27</b>: Added the ability to display the date and time.</li>
+                <li><b>2020.10.22</b>: "Self-Introduction" and "Areas of Interest" are update.</li>
+                <li><b>2020.10.13</b>: "Achievements" and "Photos" are update.</li>
+                <li><b>2020.09.14</b>: "Achievements" is update.</li>
+                <li><b>2020.06.26</b>: This website is now open!</li>
+                <li><b>2020.01.27</b>: I opened this website, and I'm ready.</li>
+            </ul>
+        </p>
     </div>
     <hr>
     <div id="Photos">
-    <h2>Photos</h2>
-    <p>
-    <div id="container">
-        <div id="itemA"><img src="random_photo/1.png" height="200" id="area1"></div>
-        <div id="itemB"><img src="random_photo/2.png" height="400" id="area2"></div>
-        <div id="itemC"><img src="random_photo/3.png" height="400" id="area3"></div>
-        <div id="itemD"><img src="random_photo/4.png" height="200" id="area4"></div>
-        <div id="itemE"><img src="random_photo/5.png" height="200" id="area5"></div>
-        <div id="itemF"><img src="random_photo/6.png" height="200" id="area6"></div>
-    </div>
-    <script type="text/javascript" src="photo.js"></script>
-    </p>
+        <h2>Photos</h2>
+        <p>
+            <div id="container">
+                <div id="itemA"><img src="random_photo/1.png" height="200" id="area1"></div>
+                <div id="itemB"><img src="random_photo/2.png" height="400" id="area2"></div>
+                <div id="itemC"><img src="random_photo/3.png" height="400" id="area3"></div>
+                <div id="itemD"><img src="random_photo/4.png" height="200" id="area4"></div>
+                <div id="itemE"><img src="random_photo/5.png" height="200" id="area5"></div>
+                <div id="itemF"><img src="random_photo/6.png" height="200" id="area6"></div>
+            </div>
+            <script type="text/javascript" src="photo.js"></script>
+        </p>
     </div>
     <div id="copyright" class="test">
-    <small>&copy; 2020 KAITO MASUDA. All Rights Reserved.</small>
+        <small>&copy; 2020 KAITO MASUDA. All Rights Reserved.</small>
     </div>
 </body>
+
 </html>
