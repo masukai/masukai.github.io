@@ -20,11 +20,9 @@
 </head>
 
 <body onLoad="select_png()">
-    <div class="cursor"></div>
-    <div class="follower"></div>
     <h3 class="bar">
         <div align="right"><span id="view_clock"></span></div>
-        <a href="./poyo_e.html">English</a> | Japanese
+        <a href="./index.html">Home</a> | <a href="./poyo_e.html">English</a> | Japanese
     </h3>
     <script type="text/javascript" src="date.js"></script>
     <ul class="index" id="nav">
@@ -66,6 +64,7 @@
         <h2>新着情報</h2>
         <p>
             <ul style="list-style-type: square">
+                <li><b>2021.01.10</b>: マウスストーカーを実装し、Homeへ戻るボタンをつけました。</li>
                 <li><b>2020.12.25</b>: Webサイトのコンテンツを大きく変更しました。</li>
                 <li><b>2020.12.01</b>: 「活動」を「サークル・同好会」「アルバイト」「ボランティア」に分割しました。</li>
                 <li><b>2020.10.27</b>: 日付と時間を表示する機能をつけました。</li>
@@ -203,8 +202,10 @@
     </div>
 
     <div id="copyright" class="test">
-        <small>&copy; 2020 KAITO MASUDA. All Rights Reserved.</small>
+        <small>&copy; 2021 KAITO MASUDA. All Rights Reserved.</small>
     </div>
+    <div id="stalker"></div>
+    <script type="text/javascript" src="cursor.js"></script>
 </body>
 
 </html>

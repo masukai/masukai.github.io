@@ -20,11 +20,9 @@
 </head>
 
 <body onLoad="select_png()">
-    <div class="cursor"></div>
-    <div class="follower"></div>
     <h3 class="bar">
         <div align="right"><span id="view_clock"></span></div>
-        <a href="./poyo_e.html">English</a> | <a href="./poyo.html">Japanese</a>
+        Home | <a href="./poyo_e.html">English</a> | <a href="./poyo.html">Japanese</a>
     </h3>
     <script type="text/javascript" src="date.js"></script>
     <ul class="index" id="nav">
@@ -40,6 +38,7 @@
         <h2>News</h2>
         <p>
             <ul style="list-style-type: square">
+                <li><b>2020.01.10</b>: Implemented mouse stalker and added a Back to Home button.</li>
                 <li><b>2020.12.25</b>: I have made major changes to the contents of this website.</li>
                 <li><b>2020.12.01</b>: I split "Activities" into "Clubs", "Part-time Works", and "Volunteers".</li>
                 <li><b>2020.10.27</b>: Added the ability to display the date and time.</li>
@@ -67,8 +66,10 @@
         </p>
     </div>
     <div id="copyright" class="test">
-        <small>&copy; 2020 KAITO MASUDA. All Rights Reserved.</small>
+        <small>&copy; 2021 KAITO MASUDA. All Rights Reserved.</small>
     </div>
+    <div id="stalker"></div>
+    <script type="text/javascript" src="cursor.js"></script>
 </body>
 
 </html>
