@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="dice.js"></script>
+    <title>Playground</title>
+    <link rel="stylesheet" type="text/css" href="poyo.css">
+    <link rel="shortcut icon" href="photo/cake.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181035238-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-181035238-1');
+    </script>
+</head>
+
+<body>
+    <h3 class="bar">
+        <div align="right"><span id="view_clock"></span></div>
+        <a href="./index.html">Home</a> | <a href="./profile_e.html">English</a> | <a href="./profile.html">Japanese</a>
+        | PlayGround
+    </h3>
+    <script type="text/javascript" src="date.js"></script>
+    <ul class="index" id="nav">
+        <li class="index"><a href="#Dice"><b>Dice</b></a></li>
+    </ul>
+    <h1>Play Ground</h1>
+    <p>
+        Let's play here!!!
+    </p>
+    <hr>
+    <div id="Dice">
+        <h2>Dice</h2>
+        <p><a><input type="button" id="btn" value="Roll the Dice!!!" onclick="saikoro()"></a></p><br>
+        <div id="saikoro"></div>
+    </div>
+
+    <div id="copyright" class="test">
+        <small>&copy; 2021 KAITO MASUDA. All Rights Reserved.</small>
+    </div>
+    <div id="stalker"></div>
+    <script type="text/javascript" src="cursor.js"></script>
+</body>
+
+</html>
