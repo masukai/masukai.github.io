@@ -3,10 +3,11 @@ var $id = function (id) {
     return document.getElementById(id);
 };
 
-function shake() {
+function roll() {
     var sai = Math.floor(Math.random() * 6) + 1; // 1から6までの適当な数字
     sai = sai + ".png"; // 画像ファイル名生成
-    $id("saikoro").innerHTML = "<img src='dice_photo/" + sai + "' width='128' height='128'>";
+    $id("saikoro").innerHTML = "<img src='dice_photo/" + sai + "' width='256' height='256'>";
+    //$id("saikoro2").innerHTML = "<img src='dice_photo/" + sai + "' width='256' height='256'>";
 }
 
 function anime() {
@@ -15,7 +16,7 @@ function anime() {
         $id("btn").disabled = ""; // ボタンを使える状態にする
         return 0;
     }
-    shake();
+    roll();
     count++;
     setTimeout(anime, 50); // 50ミリ秒間隔で表示切り替え
 }
@@ -27,5 +28,5 @@ function saikoro() {
 }
 
 window.onload = function () {
-    shake(); // 一回だけサイコロを振る
+    roll(); // 一回だけサイコロを振る
 }
