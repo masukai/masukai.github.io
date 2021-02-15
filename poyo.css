@@ -50,8 +50,8 @@ img.test {
 
 #container {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 150px 150px;
     grid-auto-flow: dense;
 }
 
@@ -60,12 +60,12 @@ img.test {
     grid-column: span 2;
 }
 
-#itemC {
+#itemF {
     grid-row: span 2;
     grid-column: span 2;
 }
 
-#itemI {
+#itemG {
     grid-row: span 2;
     grid-column: span 2;
 }
