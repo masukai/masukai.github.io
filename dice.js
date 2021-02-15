@@ -1,13 +1,13 @@
-var count; // 変化しているように見せる回数
+let count; // 変化しているように見せる回数
 let result = [];
 let result_time = [];
 let result_count = -1;
-var $id = function (id) {
+let $id = function (id) {
     return document.getElementById(id);
 };
 
 function roll() {
-    var sai = Math.floor(Math.random() * 6) + 1; // 1から6までの適当な数字
+    let sai = Math.floor(Math.random() * 6) + 1; // 1から6までの適当な数字
     $id("saikoro").innerHTML = "Time: " + getNow_time() + "<br><img src='dice_photo/" + sai + ".png' width='256' height='256'>";
     return {
         sai: sai,
@@ -52,11 +52,11 @@ window.onload = function () {
 }
 
 function getNow_time() {
-    var now = new Date();
-    var hour = ('00' + now.getHours()).slice(-2);
-    var min = ('00' + now.getMinutes()).slice(-2);
-    var sec = ('00' + now.getSeconds()).slice(-2);
+    let now = new Date();
+    let hour = ('00' + now.getHours()).slice(-2);
+    let min = ('00' + now.getMinutes()).slice(-2);
+    let sec = ('00' + now.getSeconds()).slice(-2);
     //出力用
-    var s = hour + ":" + min + ":" + sec;
+    let s = hour + ":" + min + ":" + sec;
     return s;
 }
